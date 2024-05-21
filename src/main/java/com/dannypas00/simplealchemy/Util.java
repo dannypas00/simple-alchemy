@@ -26,7 +26,7 @@ public class Util {
 
     private static String removeExcludedSuffix(String className) {
         String excludeString = String.join("|", excludedSuffixFromNamespace);
-        String excludeRegex  = String.format("(%s)$", excludeString);
+        String excludeRegex = String.format("(%s)$", excludeString);
         return className.replaceAll(excludeRegex, "");
     }
 

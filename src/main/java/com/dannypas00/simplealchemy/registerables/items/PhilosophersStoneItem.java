@@ -17,7 +17,6 @@ public class PhilosophersStoneItem extends AbstractItem {
     }
 
     public static PhilosophersStoneItem register() {
-        PhilosophersStoneItem item = new PhilosophersStoneItem();
-        return item;
+        return new PhilosophersStoneItem();
     }
 }

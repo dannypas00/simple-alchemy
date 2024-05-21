@@ -12,8 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class CreativeTabRegister {
     public static final DeferredRegister<CreativeModeTab> creativeTabRegister = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SimpleAlchemy.MODID);
 
-    public static DeferredHolder<CreativeModeTab, CreativeModeTab>
-            ALCHEMY_TAB = creativeTabRegister.register("simplealchemy_tab", () -> CreativeModeTab
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> ALCHEMY_TAB = creativeTabRegister.register("simplealchemy_tab", () -> CreativeModeTab
             .builder()
             .title(Component.translatable("itemGroup.simplealchemy"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
